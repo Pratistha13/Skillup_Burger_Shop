@@ -7,9 +7,10 @@ import Contact from "./components/contact/Contact";
 import Login from "./components/login/Login";
 import Profile from "./components/profile/Profile";
 import About from "./components/about/About";
+import Cart from "./components/cart/Cart";
 
 // Add module imports for Shipping
-// Add module imports for CART
+
 // Add module imports for MY ORDERS
 // import OrderDetails from "./components/myOrders/OrderDetails";
 
@@ -45,6 +46,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         
         <Route path="/me" element={<Profile />} />
+        
+        <Route path="/cart" element = {<Cart />} />
           {/* //           Add the Route for CART
       
           //           Add the Route for SHIPPING
