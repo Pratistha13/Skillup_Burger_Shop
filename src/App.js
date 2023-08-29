@@ -2,17 +2,17 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
-import Contact from "./components/contact/Contact";
+// import Contact from "./components/contact/Contact";
 // Add module imports for CART
 
 // Add module imports for Shipping
 
-import Login from "./components/login/Login";
-import Profile from "./components/profile/Profile";
+// import Login from "./components/login/Login";
+// import Profile from "./components/profile/Profile";
 // Add module imports for MY ORDERS
 
-import OrderDetails from "./components/myOrders/OrderDetails";
-import About from "./components/about/About";
+// import OrderDetails from "./components/myOrders/OrderDetails";
+// import About from "./components/about/About";
 
 
 import "./styles/app.scss";
@@ -36,7 +36,7 @@ function App() {
       <Header isAuthenticated={true} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
           //           Add the Route for CART
       
@@ -46,7 +46,7 @@ function App() {
         <Route path="/me" element={<Profile />} />
          //           Add the Route for MY ORDERS
 
-        <Route path="/order/:id" element={<OrderDetails />} />
+        <Route path="/order/:id" element={<OrderDetails />} /> */}
       
        
 
