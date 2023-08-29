@@ -10,10 +10,7 @@ import About from "./components/about/About";
 import Cart from "./components/cart/Cart";
 import Shipping from "./components/cart/Shipping";
 import MyOrders from "./components/myOrders/MyOrders";
-// import OrderDetails from "./components/myOrders/OrderDetails";
-
-
-
+import OrderDetails from "./components/myOrders/OrderDetails";
 
 import "./styles/app.scss";
 import "./styles/header.scss";
@@ -36,33 +33,22 @@ function App() {
       <Header isAuthenticated={true} />
       <Routes>
         <Route path="/" element={<Home />} />
-        
+
         <Route path="/about" element={<About />} />
-        
+
         <Route path="/contact" element={<Contact />} />
-        
+
         <Route path="/login" element={<Login />} />
-        
+
         <Route path="/me" element={<Profile />} />
-        
-        <Route path="/cart" element = {<Cart />} />
 
-        <Route path="/shipping" element = {<Shipping />} />
-        
-        <Route path="/myorders" element = {<MyOrders />} />
+        <Route path="/cart" element={<Cart />} />
 
+        <Route path="/shipping" element={<Shipping />} />
 
-          {/* 
-        
-        
-        
-         //           Add the Route for MY ORDERS
+        <Route path="/myorders" element={<MyOrders />} />
 
-        <Route path="/order/:id" element={<OrderDetails />} /> */}
-      
-       
-
-        
+        <Route path="/order/:id" element={<OrderDetails />} />
       </Routes>
 
       <Footer />
