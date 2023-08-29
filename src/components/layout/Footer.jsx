@@ -1,5 +1,7 @@
 import React from "react";
-import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
   return (
@@ -14,10 +16,10 @@ const Footer = () => {
       <aside>
         <h4>Follow Us</h4>
         <a href="https://youtube.com/xyz">
-          <AiFillYoutube />
+          <YouTubeIcon />
         </a>
         <a href="https://instagram.com/xyz">
-          <AiFillInstagram />
+          <InstagramIcon />
         </a>
       </aside>
     </footer>
