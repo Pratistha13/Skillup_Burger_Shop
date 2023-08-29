@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
-// import Contact from "./components/contact/Contact";
+import Contact from "./components/contact/Contact";
 // Add module imports for CART
 
 // Add module imports for Shipping
@@ -39,8 +39,8 @@ function App() {
         
         <Route path="/about" element={<About />} />
         
-        {/* <Route path="/contact" element={<Contact />} />
-          //           Add the Route for CART
+        <Route path="/contact" element={<Contact />} />
+          {/* //           Add the Route for CART
       
           //           Add the Route for SHIPPING
         
