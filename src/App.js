@@ -12,7 +12,7 @@ import Header from "./components/layout/Header";
 // Add module imports for MY ORDERS
 
 // import OrderDetails from "./components/myOrders/OrderDetails";
-// import About from "./components/about/About";
+import About from "./components/about/About";
 
 
 import "./styles/app.scss";
@@ -36,8 +36,10 @@ function App() {
       <Header isAuthenticated={true} />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/contact" element={<Contact />} />
+        
         <Route path="/about" element={<About />} />
+        
+        {/* <Route path="/contact" element={<Contact />} />
           //           Add the Route for CART
       
           //           Add the Route for SHIPPING
