@@ -1,25 +1,25 @@
 import React from "react";
 const OrderDetails = () => {
   return (
-    <section className="orderDetails">
+    <div className="orderDetails">
       <main>
         <h1>Order Details</h1>
         <div>
           <h1>Shipping</h1>
           <p>
             <b>Address</b>
-            {"Delhi west sea road"}
+            {"Kallio, Helsinki"}
           </p>
         </div>
         <div>
           <h1>Contact</h1>
           <p>
             <b>Name</b>
-            {"David"}
+            {"Juha"}
           </p>
           <p>
             <b>Phone</b>
-            {987372829}
+            {456392495}
           </p>
         </div>
         <div>
@@ -54,16 +54,16 @@ const OrderDetails = () => {
         <div>
           <h1>Amount</h1>
           <p>
-            <b>Items Total</b>₹{4132}
+            <b>Items Total</b>€{41}
           </p>
           <p>
-            <b>Shipping Charges</b>₹{100}
+            <b>Shipping Charges</b>€{3}
           </p>
           <p>
-            <b>Tax</b>₹{232}
+            <b>Tax</b>€{3}
           </p>
           <p>
-            <b>Total Amount</b>₹{232 + 100 + 4132}
+            <b>Total Amount</b>€{41 + 3 + 3}
           </p>
         </div>
         <article>
@@ -99,12 +99,12 @@ const OrderDetails = () => {
                 fontWeight: 800,
               }}
             >
-              ₹{4464}
+              €{47}
             </div>
           </div>
         </article>
       </main>
-    </section>
+    </div>
   );
 };
 export default OrderDetails;

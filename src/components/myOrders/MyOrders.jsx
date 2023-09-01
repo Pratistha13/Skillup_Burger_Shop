@@ -25,7 +25,7 @@ const MyOrders = () => {
                 <td>#sdkfsdfdsf</td>
                 <td>Processing</td>
                 <td>23</td>
-                <td>₹{2132}</td>
+                <td>€{47}</td>
                 <td>COD</td>
                 <td>
                   <Link to={`/order/${"asdsds"}`}>

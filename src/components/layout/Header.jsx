@@ -1,28 +1,63 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-// Write all the code here
-
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import {
+  MDBNavbar,
+  MDBContainer,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+} from "mdb-react-ui-kit";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 
 import DropdownMenu from "./DropdownMenu";
 
-const Header = () => {
+const Header = ({ isAuthenticated = false }) => {
+  const [showNavRight, setShowNavRight] = useState(false);
+
   return (
-    <nav>
-      <div className="svg"><FastfoodIcon /></div>
-      
-      <Link to="/">Home</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/about">About</Link>
-      <Link to="/cart">
-        <ShoppingCartIcon />
-      </Link>
-      <div>
-        <DropdownMenu />
-      </div>
-    </nav>
+    <>
+      <FastfoodIcon />
+      <MDBNavbar expand="lg" light bgColor="light">
+        <MDBContainer fluid>
+          <MDBNavbarToggler
+            type="button"
+            data-target="#navbarRightAlignExample"
+            aria-controls="navbarRightAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onClick={() => setShowNavRight(!showNavRight)}
+          >
+            <MDBIcon icon="bars" fas />
+          </MDBNavbarToggler>
+
+          <MDBCollapse navbar show={showNavRight}>
+            <MDBNavbarNav right fullWidth={false} className="mb-2 mb-lg-0">
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/">Home</MDBNavbarLink>
+              </MDBNavbarItem>
+
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/contact">Contact</MDBNavbarLink>
+              </MDBNavbarItem>
+
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/about">About</MDBNavbarLink>
+              </MDBNavbarItem>
+
+              <MDBNavbarItem>
+                <MDBNavbarLink href="/cart">
+                  <ShoppingCartIcon />
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <DropdownMenu />
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBContainer>
+      </MDBNavbar>
+    </>
   );
 };
 
